@@ -1,0 +1,129 @@
+body {
+  overflow-x: hidden;
+}
+.row {
+  background-color: #000;
+}
+.card-1 {
+  border: 0.1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.card-1 img {
+  width: 150px;
+  height: 150px;
+  filter: saturate(0);
+  transform: scale(1.1);  
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.card-2 img {
+  width: 80px;
+  height: 80px;
+}
+.card-1 img:hover {
+  cursor: pointer;
+  filter: none;
+  width: 175px;
+  transition: 0.5s ease;
+}
+.card-blink-1 img {
+  animation: blink-1 2s alternate infinite;
+  animation-delay: 2s;
+  animation-duration: 2s;
+}
+@keyframes blink-1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    filter: hue-rotate(360deg);
+    opacity: 1;
+  }
+}
+.card-blink-2 img {
+  animation: blink-2 2s infinite;
+  animation-delay: 4s;
+  animation-duration: 2s;
+}
+@keyframes blink-2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    filter: hue-rotate(360deg);
+    opacity: 1;
+  }
+}
+.card-blink-3 img {
+  animation: blink-3 2s infinite;
+  animation-delay: 6s;
+  animation-duration: 2s;
+}
+@keyframes blink-3 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    filter: hue-rotate(360deg);
+    opacity: 1;
+  }
+}
+.card-blink-4 img {
+  animation: blink-4 2s infinite;
+  animation-delay: 8s;
+  animation-duration: 2s;
+}
+@keyframes blink-4 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    filter: hue-rotate(360deg);
+    opacity: 1;
+  }
+}
+.card-blink-5 img {
+  animation: blink-5 2s infinite;
+  animation-delay: 10s;
+  animation-duration: 2s;
+}
+@keyframes blink-5 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    filter: hue-rotate(360deg);
+    opacity: 1;
+  }
+}
+.card-3{
+  position: relative;
+  left: 630px;
+}
